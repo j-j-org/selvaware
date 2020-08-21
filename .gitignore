@@ -1,0 +1,8 @@
+._*
+/._*
+wp-content/plugins/*
+wp-content/uploads/*
+wp-content/mu-plugins*
+wp-content/backups-*
+__*
+_*
