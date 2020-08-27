@@ -84,16 +84,107 @@
         <!-- <a href="#intro"><img src="img/logo.png" alt="" title=""></a> -->
       </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#intro">Inicio</a></li>
-          <li><a href="#about">Nosotros</a></li>
-          <li><a href="#features">Servicios</a></li>
-          <li><a href="#pricing">Precios</a></li>
-          <!-- <li><a href="#team">Team</a></li> -->
-          <!-- <li><a href="#gallery">Gallery</a></li> -->
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav><!-- #nav-menu-container -->
+      
+
+
+
+
+        <div class="header-navigation-wrapper">
+
+					<?php
+					if ( has_nav_menu( 'primary' ) || ! has_nav_menu( 'expanded' ) ) {
+						?>
+
+							<nav class="primary-menu-wrapper" role="navigation">
+
+								<ul class="primary-menu reset-list-style">
+
+								<?php
+								if ( has_nav_menu( 'primary' ) ) {
+
+									wp_nav_menu(
+										array(
+											'container'  => '',
+											'items_wrap' => '%3$s',
+											'theme_location' => 'primary',
+										)
+									);
+
+								} elseif ( ! has_nav_menu( 'expanded' ) ) {
+
+									wp_list_pages(
+										array(
+											'match_menu_classes' => true,
+											'show_sub_menu_icons' => true,
+											'title_li' => false,
+											
+										)
+									);
+
+								}
+								?>
+
+								</ul>
+
+							</nav><!-- .primary-menu-wrapper -->
+
+						<?php
+					}
+
+					if ( true === $enable_header_search || has_nav_menu( 'expanded' ) ) {
+						?>
+
+						<div class="header-toggles hide-no-js">
+
+						<?php
+						if ( has_nav_menu( 'expanded' ) ) {
+							?>
+
+							<div class="toggle-wrapper nav-toggle-wrapper has-expanded-menu">
+
+								<button class="toggle nav-toggle desktop-nav-toggle" data-toggle-target=".menu-modal" data-toggle-body-class="showing-menu-modal" aria-expanded="false" data-set-focus=".close-nav-toggle">
+									<span class="toggle-inner">
+										<span class="toggle-text"></span>
+										<span class="toggle-icon">
+											
+										</span>
+									</span>
+								</button><!-- .nav-toggle -->
+
+							</div><!-- .nav-toggle-wrapper -->
+
+							<?php
+						}
+
+						if ( true === $enable_header_search ) {
+							?>
+
+							<div class="toggle-wrapper search-toggle-wrapper">
+
+								<button class="toggle search-toggle desktop-search-toggle" data-toggle-target=".search-modal" data-toggle-body-class="showing-search-modal" data-set-focus=".search-modal .search-field" aria-expanded="false">
+									<span class="toggle-inner">
+										
+										<span class="toggle-text"></span>
+									</span>
+								</button><!-- .search-toggle -->
+
+							</div>
+
+							<?php
+						}
+						?>
+
+						</div><!-- .header-toggles -->
+						<?php
+					}
+					?>
+
+				</div><!-- .header-navigation-wrapper -->
+
+
+
+
+
+      
     </div>
   </header><!-- #header -->
