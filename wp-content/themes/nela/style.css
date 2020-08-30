@@ -1,10 +1,18 @@
+
 /*
- * Shahala: Free Template by FreeHTML5.co
- * Author: https://freehtml5.co
- * Facebook: https://facebook.com/fh5co
- * Twitter: https://twitter.com/fh5co
- */
- 
+Theme Name: nela
+Theme URI:
+Author: selvaware
+Author URI: https://selvaware.com/
+Description: Theme diseñado para nela
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: holistico flores
+Text Domain: nela
+*/
+
+
  html, body, div, span, applet, object, iframe,
  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
  a, abbr, acronym, address, big, cite, code,
@@ -80,11 +88,7 @@
        color: #ffffff; }
      header .nav-fill li:hover a {
        color: #03133a; }
-   header .navbar li.nav-item a.nav-link {
-     font-family: "Montserrat-Bold";
-     color: #ffffff;
-     padding-right: 1.5rem;
-     padding-left: 1.5rem; }
+
    header .card {
      color: #ffffff; }
      header .card p {
@@ -532,7 +536,7 @@
      font-size: 16px; }
  
  .stay {
-   background: url(../images/stay-bg.png);
+   background: url(/images/stay-bg.png);
    background-repeat: repeat; }
    .stay h2 {
      font-size: 48px;
@@ -565,7 +569,7 @@
        border-color: #06236a; }
  
  footer {
-   background-image: url(../images/home-bg.png); }
+   background-image: url(/images/home-bg.png); }
    footer h2.logo {
      font-size: 75px;
      font-family: "Angeline_Vintage";
@@ -630,7 +634,7 @@
      align-items: stretch; }
      .ar-content .my-5.media .bbg.media-body {
        padding: 30px 20px;
-       background: url(../images/quote-bg.png); }
+       background: url(/images/quote-bg.png); }
      .ar-content .my-5.media h5 {
        font-family: "Roboto-Italic";
        font-size: 30px;
@@ -749,7 +753,7 @@
    height: auto;
    margin: 40px auto; }
  .sidebar .card.pb-5 {
-   background: url(../images/stay-bg.png); }
+   background: url(/images/stay-bg.png); }
  .sidebar .third-clr {
    color: #777777;
    font-size: 14px; }
@@ -807,6 +811,37 @@
    .tranding-posts .media:hover a {
      color: #03133a;
      font-family: "Montserrat-Bold"; }
+
+
+
+
+/* EDITS */   
+.menu-main-menu-container, .menu-logoff-menu-container{
+  width: 100%;
+}
+
+#menu-main-menu li a, #menu-logoff-menu li a {
+  font-family: "Montserrat-Bold";
+  color: #ffffff;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem; 
+}
+
+#menu-main-menu, #menu-logoff-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#index_main_wrapper {
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
+
+
+
+
+
+
  
  @media (max-width: 767px) {
    .mt-md-4 {
