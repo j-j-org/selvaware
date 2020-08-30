@@ -837,7 +837,14 @@ Text Domain: nela
   margin: 0 auto 0 auto;
 }
 
+#index_main_wrapper .cards p,#index_main_wrapper .cards h2, #index_main_wrapper .cards a{
+  color: #fff;
+}
 
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1{
+  max-width: none !important;
+}
+/* EDITS */
 
 
 

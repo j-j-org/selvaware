@@ -46,14 +46,17 @@ function products_by_category_slug( $atts, $content = null ) {
         'orderby' => 'rand',
         ), $atts));
     ?>
-        <div class='cards'>
+        <!--- while starts here -->
     <?php
-        $args = array( 'post_type' => 'product', 'posts_per_page' => 1, 'product_cat' =>$product_cat, 'orderby' => $orderby);
+        $args = array( 'post_type' => 'product', 'posts_per_page' => -1, 'product_cat' =>$product_cat, 'orderby' => $orderby);
         $loop = new WP_Query( $args );
+        
         while ( $loop->have_posts() ) : $loop->the_post(); 
         global $product; 
         $imgUrl = wp_get_attachment_url($product->image_id);
     ?>
+    <div class='col-md-6 pr-0'>
+        <div class='cards'>
             <img class="card-img" src="<?php echo $imgUrl; ?>" alt="">
             <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
                 <p><?php echo $product->short_description; ?></p>
@@ -61,8 +64,10 @@ function products_by_category_slug( $atts, $content = null ) {
                 <h2><?php echo $product->name; ?></h2>
                 <a href="/index.php/product/<?php echo $product->slug; ?>" class="btn">Ver mas</a>
             </div>
+            </div> <!--- class='cards' --->
+            </div>
         <?php endwhile; ?>
-        </div> <!--- class='cards' --->
+        <!--- while ends here -->
     <?php 
     
     wp_reset_query(); 

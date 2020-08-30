@@ -6,18 +6,7 @@
 <div id="index_main_wrapper" class="row">
     <header>
         <div class="row ml-0 mr-0">
-            <div class="col-md-6 pr-0">
-                <?php
-                    // Echo do_shortcode ('[products 
-                    // limit="1" columns="1" 
-                    // orderby="id" 
-                    // order="DESC" 
-                    // category="main-product" 
-                    // class="card" ]');
-                    Echo do_shortcode ('[products_by_category_slug product_cat="main-product" orderby="rand" order="DESC" limit="1" columns="1"]');
-                ?>
-            </div>
-            <div class="col-md-6 pl-0">
+            
             <?php
                 // Echo do_shortcode ('[products 
                 //     limit="1" 
@@ -26,20 +15,8 @@
                 //     order="ASC" 
                 //     category="main-product" 
                 //     class="card" ]');
-                Echo do_shortcode ('[products_by_category_slug product_cat="main-product" orderby="rand" order="ASC" limit="1" columns="1"]');
+                Echo do_shortcode ('[products_by_category_slug product_cat="main-product" orderby="rand" ]');
             ?>
-            
-                <!-- <div class="card">
-                    <img class="card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/right-img.jpg" alt="">
-                    <div class="card-img-overlay d-flex align-items-center justify-content-center flex-column">
-                        <p>DECOR</p>
-                        <hr />
-                        <h2>Sed ut perspiciatis unde
-                            omnis iste natus</h2>
-                        <a href="article.html" class="btn">READ MORE</a>
-                    </div>
-                </div> -->
-            </div>
 
             <div class="col-md-3 pr-0 first">
                 <div class="card">
