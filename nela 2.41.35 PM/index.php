@@ -2,24 +2,61 @@
     
     get_header(); 
 ?>
-<div class="header-content-wrapper row">      
-        <?php
-            // Echo do_shortcode ('[products 
-            //     limit="1" 
-            //     columns="1" 
-            //     orderby="id" 
-            //     order="ASC" 
-            //     category="main-product" 
-            //     class="card" ]');
-            Echo do_shortcode ('[products_by_category_slug product_cat="home-page-display" orderby="rand" ]');
-            Echo do_shortcode ('[products_by_category_slug_smallbox product_cat="home-page-small-display" orderby="rand" ]');
-            
-        ?>
 
-    </div>
-</header>
-</div>
 <div id="index_main_wrapper" class="row">
+    <header>
+        <div class="row ml-0 mr-0">
+            
+            <?php
+                // Echo do_shortcode ('[products 
+                //     limit="1" 
+                //     columns="1" 
+                //     orderby="id" 
+                //     order="ASC" 
+                //     category="main-product" 
+                //     class="card" ]');
+                Echo do_shortcode ('[products_by_category_slug product_cat="main-product" orderby="rand" ]');
+            ?>
+
+            <div class="col-md-3 pr-0 first">
+                <div class="card">
+                    <img class="card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/architecture.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5>Architecture</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 pl-0 pr-0">
+                <div class="card">
+                    <img class="card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/interior.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5>Interior</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 pl-0 pr-0">
+                <div class="card">
+                    <img class="card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/food.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5>Food</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 pl-0 last">
+                <div class="card">
+                    <img class="card-img" src="<?php echo get_stylesheet_directory_uri(); ?>/images/travel.png" alt="">
+                    <div class="card-img-overlay">
+                        <h5>Travel</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    
 
     <div style="max-width: 1200px;margin: auto;margin-left: auto !important; margin-right: auto !important;" class="container-fluid video-player">
         <div class="container">

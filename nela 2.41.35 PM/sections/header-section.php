@@ -1,7 +1,8 @@
 
+        
 <header>
-    <div class="header-menu-custom-wrapper bg-cover clearfix pt-3">
-        <a id="main-logo-title" href="/"><h2 class="logo">Tienda Nela</h2></a>
+    <div style="max-width: 1200px;margin: auto;margin-left: auto !important; margin-right: auto !important;" class="bg-cover clearfix pt-3">
+        <h2 class="logo">Shahala</h2>
         <nav class="nav nav-fill mx-auto">
             <li class="nav-item">
                 <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
@@ -52,3 +53,4 @@
             </nav>
         </div>
     </div>
+</header>
