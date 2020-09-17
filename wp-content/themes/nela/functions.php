@@ -1,11 +1,10 @@
 <?php
 
-function customtheme_add_woocommerce_support() {
+function nela_add_woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
-add_action( 'after_setup_theme', 'customtheme_add_woocommerce_support' );
-
+add_action( 'after_setup_theme', 'nela_add_woocommerce_support' );
 
 
 /**
@@ -35,6 +34,11 @@ function wpb_custom_new_logoff_menu() {
     register_nav_menu('logoff-menu',__( 'Logoff Menu' ));
 }
 add_action( 'init', 'wpb_custom_new_logoff_menu' );
+
+function wpb_footer_menu() {
+    register_nav_menu('footer-menu',__( 'Footer Menu' ));
+}
+add_action( 'init', 'wpb_footer_menu' );
 
 add_shortcode( 'products_by_category_slug', 'products_by_category_slug' );
 function products_by_category_slug( $atts, $content = null ) {
@@ -148,3 +152,5 @@ function get_videos_per_user_shortcode( $atts ) {
     
  }
  add_shortcode( 'customvideo', 'customvideo_shortcode' );
+
+ 

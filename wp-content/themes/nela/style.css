@@ -833,6 +833,10 @@ Text Domain: nela
 #menu-main-menu, #menu-logoff-menu {
   display: flex;
   justify-content: space-evenly;
+
+}
+#menu-main-menu{
+  list-style: none;
 }
 
 #main,
@@ -905,8 +909,58 @@ Text Domain: nela
 .card-wrapper {
   overflow: hidden;
 }
-/* EDITS */
 
+.footer-menu-custom{
+  background-color: #03133a;
+  max-width: full-width;
+  margin: 0 auto 0 auto;
+  padding: 30px;
+  
+}
+
+
+
+.footer-info-custom{
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px auto;
+}
+.footer-info-custom p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+#menu-item-38 > a{
+  color:white;
+}
+#menu-item-38 a:hover {
+  opacity: 0.5;
+}
+
+.footer-menu-container{
+  list-style: none;
+}
+
+.footer-contact{
+  display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.footer-contact .footer__media-icons{
+  margin: 5px;
+}
+
+
+.footer-contact .footer__media-icons img:hover {
+    opacity: 0.5;
+}
+
+/*Check out*/
+#coupon_code{
+  width: 140px;
+}
 
 
  

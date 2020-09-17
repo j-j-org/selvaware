@@ -2,23 +2,24 @@
     
     get_header(); 
 ?>
-<div class="header-content-wrapper row">      
-        <?php
-            // Echo do_shortcode ('[products 
-            //     limit="1" 
-            //     columns="1" 
-            //     orderby="id" 
-            //     order="ASC" 
-            //     category="main-product" 
-            //     class="card" ]');
-            Echo do_shortcode ('[products_by_category_slug product_cat="home-page-display" orderby="rand" ]');
-            Echo do_shortcode ('[products_by_category_slug_smallbox product_cat="home-page-small-display" orderby="rand" ]');
-            
-        ?>
+        <div class="header-content-wrapper row">      
+                <?php
+                    // Echo do_shortcode ('[products 
+                    //     limit="1" 
+                    //     columns="1" 
+                    //     orderby="id" 
+                    //     order="ASC" 
+                    //     category="main-product" 
+                    //     class="card" ]');
+                    Echo do_shortcode ('[products_by_category_slug product_cat="home-page-display" orderby="rand" ]');
+                    Echo do_shortcode ('[products_by_category_slug_smallbox product_cat="home-page-small-display" orderby="rand" ]');
+                    
+                ?>
 
-    </div>
-</header>
-</div>
+        </div>
+    </header> <!--- header section --->
+</div> <!--- header --->
+
 <div id="index_main_wrapper" class="row">
 
     <div style="max-width: 1200px;margin: auto;margin-left: auto !important; margin-right: auto !important;" class="container-fluid video-player">
