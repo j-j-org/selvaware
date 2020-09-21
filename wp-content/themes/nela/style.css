@@ -833,7 +833,7 @@ Text Domain: nela
 #menu-main-menu, #menu-logoff-menu {
   display: flex;
   justify-content: space-evenly;
-
+  list-style: none;
 }
 #menu-main-menu{
   list-style: none;
@@ -862,9 +862,6 @@ Text Domain: nela
   color: #fff;
 }
 
-.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1{
-  max-width: none !important;
-}
 #main-logo-title {
   text-decoration: none;
 }
@@ -961,8 +958,30 @@ Text Domain: nela
 #coupon_code{
   width: 140px;
 }
+.content-area .woocommerce form.woocommerce-checkout #customer_details {
+  display: flex;
+}
+.content-area .woocommerce form.woocommerce-checkout #customer_details > .col-1,
+.content-area .woocommerce form.woocommerce-checkout #customer_details > .col-2{
+  max-width: none;
+  float: none;
+  flex: none;
+}
+.woocommerce-billing-fields__field-wrapper .form-row {
+  width: 100% !important;
+  float: none !important;
+}
+.woocommerce-billing-fields__field-wrapper .form-row label,
+.woocommerce-billing-fields__field-wrapper .form-row span {
+  width: 50%;
+}
 
 
+/* Shop */
+.content-area {
+  width: 80%;
+  margin: auto;
+}
  
  @media (max-width: 767px) {
    .mt-md-4 {
@@ -974,4 +993,7 @@ Text Domain: nela
      padding-left: 15px !important; } }
  
  /*# sourceMappingURL=style.css.map */
+ 
+
+
  

@@ -6,3 +6,4 @@ wp-content/mu-plugins*
 wp-content/backups-*
 __*
 _*
+.DS_Store

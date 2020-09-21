@@ -2,7 +2,7 @@
 </header>
 </div>
 <div id="primary" class="content-area">
-    <div class="woocommerce dafuck">
+    <div class="">
         <?php
             woocommerce_content();
         ?>
