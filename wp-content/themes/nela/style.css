@@ -45,8 +45,9 @@ Text Domain: nela
    font-family: "Roboto-Regular";
    font-size: 16px; }
  
- h1, h2, h3, h4, h5, h6 {
-   font-family: "Montserrat-Bold"; }
+ h1, h2, h3, h4, h5, h6, p {
+   font-family: "Montserrat-Bold"; 
+}
  
  .container-fluid {
    padding: 0; }
@@ -976,21 +977,53 @@ Text Domain: nela
   width: 50%;
 }
 
+/* Page */
+.page-main {
+  padding: 40px;
+}
+.page-main p {
+  font-size: 16px;
+  font-family: "Helvetica";
+  text-align: justify;
+}
+.page-main h2 {
+  font-family: "Angeline_Vintage";
+  margin: 20px 0px;
+  font-size: 38px;
+  font-weight: 600;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #06236a;
+}
 
 /* Shop */
 .content-area {
   width: 80%;
   margin: auto;
 }
+.content-area .page-title {
+  font-family: "Angeline_Vintage";
+  margin: 0px 0px 20px 0px;
+}
  
  @media (max-width: 767px) {
    .mt-md-4 {
-     margin-top: 50px; } }
+      margin-top: 50px; 
+    } 
+
+    /* Menu */
+    .navbar-collapse .menu-main-menu-container #menu-main-menu {
+      display: block;
+    }
+  }
+
  @media (max-width: 991px) {
    .ar-content .col-lg-9 {
-     padding-right: 15px !important; }
+     padding-right: 15px !important; 
+    }
    .ar-content .col-lg-3 {
-     padding-left: 15px !important; } }
+     padding-left: 15px !important; 
+    } 
+  }
  
  /*# sourceMappingURL=style.css.map */
  

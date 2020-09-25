@@ -4,16 +4,15 @@
 ?>
         <div class="header-content-wrapper row">      
                 <?php
-                    // Echo do_shortcode ('[products 
+                    // echo do_shortcode ('[products 
                     //     limit="1" 
                     //     columns="1" 
                     //     orderby="id" 
                     //     order="ASC" 
                     //     category="main-product" 
                     //     class="card" ]');
-                    Echo do_shortcode ('[products_by_category_slug product_cat="home-page-display" orderby="rand" ]');
-                    Echo do_shortcode ('[products_by_category_slug_smallbox product_cat="home-page-small-display" orderby="rand" ]');
-                    
+                    echo do_shortcode ('[products_by_category_slug product_cat="home-page-display" orderby="rand" ]');
+                    echo do_shortcode ('[products_by_category_slug_smallbox product_cat="home-page-small-display" orderby="rand" ]');
                 ?>
 
         </div>
@@ -24,10 +23,8 @@
 
     <div style="max-width: 1200px;margin: auto;margin-left: auto !important; margin-right: auto !important;" class="container-fluid video-player">
         <div class="container">
-            <div class="screen embed-responsive embed-responsive-16by9">
-                <iframe id="screen" src="https://www.youtube.com/embed/R971LKLP-zc" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="screen embed-responsive Here i am">
+                <? echo do_shortcode ('[homepage_upper_section]'); ?>
             </div>
 
             <div class="play-list">

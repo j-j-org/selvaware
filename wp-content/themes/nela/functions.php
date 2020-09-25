@@ -153,4 +153,6 @@ function get_videos_per_user_shortcode( $atts ) {
  }
  add_shortcode( 'customvideo', 'customvideo_shortcode' );
 
+ include 'sections/homepage-mid-section.php';
+
  

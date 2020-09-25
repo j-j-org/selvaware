@@ -19,8 +19,22 @@
 					</div>
 				</div>
 			</footer>
-
-	
+			<script>
+				var onMobileMenuClick = function() {
+					
+					var menuElement = document.getElementById('my-nav');
+					var className = 'collapse';
+					
+					if(menuElement.classList.contains(className)) {
+						console.log(className);
+						menuElement.classList.remove(className);
+						console.log(menuElement.classList);
+					} else {
+						menuElement.classList.add(className);
+					}
+					
+				}
+			</script>		
 		</div>
 	</body>
 </html>
