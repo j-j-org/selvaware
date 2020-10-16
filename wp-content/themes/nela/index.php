@@ -2,20 +2,7 @@
     
     get_header(); 
 ?>
-        <div class="header-content-wrapper row">      
-                <?php
-                    // echo do_shortcode ('[products 
-                    //     limit="1" 
-                    //     columns="1" 
-                    //     orderby="id" 
-                    //     order="ASC" 
-                    //     category="main-product" 
-                    //     class="card" ]');
-                    echo do_shortcode ('[products_by_category_slug product_cat="home-page-display" orderby="rand" ]');
-                    echo do_shortcode ('[products_by_category_slug_smallbox product_cat="home-page-small-display" orderby="rand" ]');
-                ?>
 
-        </div>
     </header> <!--- header section --->
 </div> <!--- header --->
 
@@ -66,9 +53,6 @@
                 </div>
             </div>
             <hr>
-
-
-
             <div class="row vr-gallery">
                 <div class="col-md-8 mb-4">
                     <div class="row">
@@ -166,8 +150,6 @@
 
         </div>
     </div>
-
-
 
 </div>
 <?php get_footer(); ?>
